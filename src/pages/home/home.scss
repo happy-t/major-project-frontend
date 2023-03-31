@@ -1,0 +1,170 @@
+.home {
+    width: 100%;
+    height: 100vh;
+    background-color: #0F55A7;
+    display: grid;
+    grid-template-columns: 230px 1fr;
+    position: relative;
+
+    .headerHome {
+        width: 100%;
+        height: 50px;
+        background: #0F55A7;
+        box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.25);
+        padding-left: 20px;
+        display: flex;
+        align-items: center;
+
+        h4 {
+            font-size: 20px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: 600;
+            color: white;
+            letter-spacing: .5px;
+        }
+    }
+
+    .btnBox {
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        margin-left: auto;
+        width: 150px;
+        height: 50px;
+        display: grid;
+        place-content: center;
+
+        .bt {
+            text-transform: none;
+            background-color: rgb(5, 196, 5);
+        }
+    }
+
+    .allClass {
+        width: 95%;
+        margin: auto;
+        line-height: 45px;
+        margin-top: 10vh;
+        background: white;
+        font-size: 18px;
+        padding-left: 20px;
+        border-radius: 5px;
+        font-weight: 600;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .classCon {
+        width: 95%;
+        margin: auto;
+        margin-top: 10px;
+        height: 50vh;
+        background-color: rgb(146, 146, 201);
+        overflow-y: scroll;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        border-radius: 5px;
+    }
+
+    .addClassForm {
+        width: 100%;
+        height: 100vh;
+        background-color: rgb(0, 0, 0, 0.4);
+        display: grid;
+        place-content: center;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        z-index: 10;
+
+        .innerClassForm {
+            width: 350px;
+            background-color: white;
+            border-radius: 10px;
+            position: relative;
+            padding: 10px;
+            padding-bottom: 20px;
+
+            .fileBox {
+                width: 120px;
+                height: 80px;
+                border: 1px dotted black;
+                margin: 20px;
+                border-radius: 5px;
+                display: grid;
+                place-content: center;
+                color: #797979;
+                position: relative;
+
+                #file {
+                    width: 100%;
+                    height: 100%;
+                    opacity: 0;
+                    position: absolute;
+                    cursor: pointer;
+                }
+            }
+
+            #color {
+                background-color: rgba(76, 246, 76, 0.5);
+                color: white;
+            }
+
+            .btn {
+                position: absolute;
+                top: 8px;
+                right: 8px;
+                cursor: pointer;
+            }
+
+            section {
+                text-align: center;
+                font-size: 18px;
+                font-weight: 600;
+                margin-top: 0px;
+                font-family: Arial, Helvetica, sans-serif;
+                margin-bottom: 20px;
+            }
+
+            .form-group {
+                margin: 20px;
+                font-size: 14px;
+
+                label {
+                    font-weight: 600;
+                    margin-bottom: 5px;
+                }
+
+                input {
+                    font-size: 14px;
+                }
+            }
+
+            .formBtnBox {
+                width: 80%;
+                margin: auto;
+                text-align: center;
+
+                .addBt {
+                    text-transform: none;
+                }
+            }
+        }
+    }
+}
+
+
+@media (max-width:768px) {
+    .home {
+        grid-template-columns: 0px 1fr;
+
+        .headerHome {
+            h4 {
+                font-size: 18px;
+            }
+        }
+
+        .classCon {
+            padding: 10px;
+        }
+    }
+}

@@ -1,0 +1,11 @@
+.sideBar {
+    width: 230px;
+    height: 100vh;
+    background: #010263;
+}
+
+@media (max-width:768px) {
+    .sideBar {
+        display: none;
+    }
+}
